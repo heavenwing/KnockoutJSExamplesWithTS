@@ -1,4 +1,4 @@
 KnockoutJSExamplesWithTS
 ========================
 
-An clone for KnockoutJS Examples using TypeScript
+A clone for KnockoutJS Examples using TypeScript
