@@ -61,9 +61,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="animatedTransitions.html" />
+    <Content Include="clickCounter.html" />
+    <Content Include="collections.html" />
+    <Content Include="controlTypes.html" />
+    <Content Include="grid.html" />
     <Content Include="helloWorld.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -76,16 +85,39 @@
     <Content Include="Scripts\knockout-3.2.0.js" />
     <Content Include="Scripts\knockout.mapping-latest.debug.js" />
     <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="betterList.html" />
+    <Content Include="simpleList.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="animatedTransitions.ts">
+      <DependentUpon>animatedTransitions.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="clickCounter.ts">
+      <DependentUpon>clickCounter.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="collections.ts">
+      <DependentUpon>collections.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="controlTypes.ts">
+      <DependentUpon>controlTypes.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="grid.ts">
+      <DependentUpon>grid.html</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="helloWorld.ts">
       <DependentUpon>helloWorld.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
+    <TypeScriptCompile Include="betterList.ts">
+      <DependentUpon>betterList.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="simpleList.ts">
+      <DependentUpon>simpleList.html</DependentUpon>
+    </TypeScriptCompile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

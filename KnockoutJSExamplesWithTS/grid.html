@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/knockout-3.2.0.js"></script>
+    <script src="http://knockoutjs.com/examples/resources/knockout.simpleGrid.3.0.js" type="text/javascript"> </script>
+</head>
+<body>
+    <div data-bind='simpleGrid: gridViewModel'> </div>
+
+    <button data-bind='click: addItem'>
+        Add item
+    </button>
+
+    <button data-bind='click: sortByName'>
+        Sort by name
+    </button>
+
+    <button data-bind='click: jumpToFirstPage, enable: gridViewModel.currentPageIndex'>
+        Jump to first page
+    </button>
+
+    <script src="grid.js"></script>
+</body>
+</html>
